@@ -9,7 +9,7 @@ const api = axios.create({
 // ─── Group APIs ───────────────────────────────────────────────────────────────
 
 export const createGroup = (name) =>
-  api.post('/groups', { name }).then((res) => res.data.data)
+  api.post('/groups', { name }).then((res) => res.data.data);
 
 export const getGroupByCode = (code) =>
   api.get(`/groups/${code}`).then((res) => res.data.data)
