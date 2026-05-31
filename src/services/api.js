@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // All API calls go through this base instance
 const api = axios.create({
-  baseURL: 'http://localhost:4001/api/v1',
+  baseURL: 'https://tracking-expenses-orpin.vercel.app/api/v1',
   headers: { 'Content-Type': 'application/json' },
 })
 
